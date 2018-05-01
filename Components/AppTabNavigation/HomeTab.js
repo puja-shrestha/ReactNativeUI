@@ -5,7 +5,8 @@ import {
     StyleSheet
 } from "react-native";
 
-import { Icon } from "native-base"
+import { Icon, Container, Content } from "native-base"
+import CardComponent from '../CardComponent'
 
 class HomeTab extends Component {
 
@@ -18,9 +19,11 @@ class HomeTab extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text>HomeTab</Text>
-            </View>
+            <Container style={styles.container}> 
+                <Content>
+                    <CardComponent />
+                </Content>
+            </Container>
         );
     }
 }
@@ -30,7 +33,6 @@ export default HomeTab;
 const styles = StyleSheet.create({ 
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
+        backgroundColor: 'white'
     }
  });
