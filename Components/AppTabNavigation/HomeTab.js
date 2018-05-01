@@ -21,7 +21,8 @@ class HomeTab extends Component {
         return (
             <Container style={styles.container}> 
                 <Content>
-                    <CardComponent />
+                    <CardComponent imageSource="1" likes="110"/>
+                    <CardComponent imageSource="2" likes="166"/>
                 </Content>
             </Container>
         );
